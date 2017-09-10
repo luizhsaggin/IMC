@@ -23,7 +23,7 @@ public class Ex2Test {
     public void testCalculoIMC() 
     {
         double peso = 90.0;
-        double altura = 190.0;
+        double altura = 180.0;
         double imc = peso/(altura*altura);
         assertEquals(imc, eng.calculoIMC(peso, altura), 0);
     }  
@@ -33,11 +33,11 @@ public class Ex2Test {
     {    
         
         double imc = 18.4;
-        String result = String.format("VocÃª estÃ¡ abaixo do peso recomendado. IMC %.2f", imc);
+        String result = String.format("Você está abaixo do peso recomendado. IMC %.2f", imc);
         assertEquals("Message is not equal", result, eng.geraMensagem(imc));
         
         imc = 10.0;
-        result = String.format("VocÃª estÃ¡ abaixo do peso recomendado. IMC %.2f", imc);
+        result = String.format("Você está abaixo do peso recomendado. IMC %.2f", imc);
         assertEquals("Message is not equal", result, eng.geraMensagem(imc));
     }
     
@@ -46,15 +46,15 @@ public class Ex2Test {
     {    
         
         double imc = 18.6;
-        String result = String.format("VocÃª estÃ¡ muito bem! Continue assim! IMC %.2f", imc);
+        String result = String.format("Você está¡ muito bem! Continue assim! IMC %.2f", imc);
         assertEquals("Message is not equal", result, eng.geraMensagem(imc));
         
         imc = 24.9;
-        result = String.format("VocÃª estÃ¡ muito bem! Continue assim! IMC %.2f", imc);
+        result = String.format("Você está¡ muito bem! Continue assim! IMC %.2f", imc);
         assertEquals("Message is not equal", result, eng.geraMensagem(imc));
         
         imc = 21.0;
-        result = String.format("VocÃª estÃ¡ muito bem! Continue assim! IMC %.2f", imc);
+        result = String.format("Você estÃ¡ muito bem! Continue assim! IMC %.2f", imc);
         assertEquals("Message is not equal", result, eng.geraMensagem(imc));
     }
     
